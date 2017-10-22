@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="tts" type="tts_node" name="xf_tts" output="screen">
+        <param name="sub_topic" type="str" value="xf_voice/tts"/>
+        <param name="user_id" type="str" value="590043a6"/>
+        <param name="voice_name" type="str" value="xiaomeng"/>
+        <param name="text_encoding" type="str" value="utf8"/>
+        <param name="sample_rate" type="str" value="16000 "/>
+        <param name="speed" type="str" value="50 "/>
+        <param name="volume" type="str" value="50 "/>
+        <param name="pitch" type="str" value="50 "/>
+        <param name="rdn" type="str" value="0 "/>
+        <param name="tmp_file" type="str" value="$(find tts)/tmp/voice.wav"/>
+    </node>
+</launch>
