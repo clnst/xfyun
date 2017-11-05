@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="iat" type="iat_node" name="xf_iat" output="screen">
+        <param name="sub_topic" type="str" value="xf_voice/iat"/>
+        <param name="pub_topic" type="str" value="nlp/tuling"/>
+        <param name="user_id" type="str" value="590043a6"/>
+        <param name="sub" type="str" value="iat"/>
+        <param name="domain" type="str" value="iat"/>
+        <param name="language" type="str" value="zh_cn"/>
+        <param name="accent" type="str" value="mandarin"/>
+        <param name="sample_rate" type="str" value="16000"/>
+        <param name="result_type" type="str" value="plain"/>
+        <param name="result_encoding" type="str" value="utf8"/>
+    </node>
+</launch>

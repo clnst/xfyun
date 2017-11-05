@@ -25,9 +25,9 @@
 #include <unistd.h>
 #include <std_msgs/String.h>
 
-#include "tts/qtts.h"
-#include "tts/msp_cmn.h"
-#include "tts/msp_errors.h"
+#include <tts/qtts.h>
+#include <tts/msp_cmn.h>
+#include <tts/msp_errors.h>
 
 class Tts{
 public:
@@ -82,7 +82,7 @@ private:
     int text_to_speech(const char* src_text, const char* des_path, const char* params);
     void tts_cb(const std_msgs::String::ConstPtr &msg);
     int play(const char* text);
-};
 
+};
 
 #endif // __TTS_NODE_H__

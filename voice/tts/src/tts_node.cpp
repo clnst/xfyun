@@ -134,7 +134,7 @@ Tts::Tts(void)
 
 Tts::~Tts(void)
 {
-    const char* quit = " 退出hercules two ";
+    const char* quit = " 退出hercules";
     play(quit);
     MSPLogout(); //退出登录
 }
@@ -142,7 +142,7 @@ Tts::~Tts(void)
 bool Tts::init(void)
 {
     int ret = MSP_SUCCESS;
-    const char* start = " 启动hercules two ";
+    const char* start = " 启动hercules";
 
     ros::param::get("~sub_topic", sub_topic);
 
@@ -213,6 +213,7 @@ bool Tts::init(void)
 
 bool Tts::update(void)
 {
+    ros::spin();
     return true;
 }
 
@@ -225,7 +226,6 @@ int main(int argc, char* argv[])
     Tts tts;
 
     tts.update();
-    ros::spin();
-
+    
     return 0;
 }

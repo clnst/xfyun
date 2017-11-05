@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="asr" type="asr_node" name="xf_asr" output="screen">
+    </node>
+</launch>
