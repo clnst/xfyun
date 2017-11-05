@@ -22,13 +22,29 @@ xfyun for ros
 - sudo apt-get install sox
 
 
+# NLP support packages
+
+- nlp(tuling)
+
+
 # Ros subscriber topic
 
 - "/xf_voice/tts"
+- "/xf_voice/iat"
 
-- rostopic pub -1 /xf_voice/tts std_msgs/String "test tts"
+
+# Ros Publisher topic
+
+- "/nlp/tuling"
 
 
 # Usage method
 
 - roslaunch tts xf_tts.launch
+- roslaunch iat xf_iat.launch
+- roslaunch nlp tl_nlp.launch
+
+
+# Ros test xfyun
+
+- rostopic pub -1 /xf_voice/iat std_msgs/Int32 1
